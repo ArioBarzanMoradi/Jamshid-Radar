@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#202124"/>
+  <meta name="description" content="جمشید: داشبورد خودمیزبان رادار شبکه برای Ubuntu. پایش پورت‌ها، کیفیت ارتباط ایران به خارج، TCP/ICMP، سرویس‌های VPN و وضعیت شبکه با رابط کاربری شیشه‌ای."/>
+  <meta property="og:title" content="جمشید — JAMSHID Network Radar"/>
+  <meta property="og:description" content="رادار شبکه، با یک نگاه. پایش سرور Ubuntu و ارتباط خروجی به خارج از کشور."/>
+  <meta property="og:type" content="website"/>
+  <meta name="jamshid-repository" content="ArioBarzanMoradi/Jamshid-Radar"/>
+  <title>جمشید — رادار شبکه برای Ubuntu</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-blue" aria-hidden="true"></div><div class="ambient ambient-gold" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav-shell shell" aria-label="منوی اصلی">
+      <a href="#home" class="brand" aria-label="جمشید - بازگشت به بالا">
+        <img src="assets/logo.svg" width="43" height="43" alt=""/>
+        <span><strong>جمشید</strong><small>JAMSHID / NETWORK RADAR</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">قابلیت‌ها</a><a href="#preview">پیش‌نمایش</a><a href="#workflow">معماری</a><a href="#install">نصب</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-btn" type="button" data-theme-toggle aria-label="تغییر تم به روشن" title="تغییر تم"><span class="theme-symbol" aria-hidden="true">☀</span></button>
+        <a href="https://github.com" data-repo-link target="_blank" rel="noopener noreferrer" class="nav-github"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.09.67-3.75-1.31-3.75-1.31-.5-1.29-1.22-1.63-1.22-1.63-1-.68.08-.67.08-.67 1.11.08 1.69 1.14 1.69 1.14.99 1.68 2.59 1.2 3.22.92.1-.71.39-1.2.71-1.48-2.47-.29-5.06-1.23-5.06-5.49 0-1.21.43-2.2 1.14-2.98-.12-.29-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.55 0c2.11-1.43 3.04-1.13 3.04-1.13.61 1.53.23 2.65.11 2.94.71.78 1.14 1.77 1.14 2.98 0 4.27-2.6 5.2-5.08 5.48.4.35.76 1.02.76 2.05v3.03c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg><span>GitHub</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero shell" id="home">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="pulse" aria-hidden="true"></span> JAMSHID v1.1 <span class="eyebrow-separator"></span> GITHUB READY</span>
+        <h1>شبکه را <span class="accent-title">واضح‌تر</span><br/>از همیشه ببین.</h1>
+        <p class="hero-lead">جمشید، رادار شبکه برای سرورهای <b>Ubuntu</b>؛ از پورت‌های TCP و UDP تا آزمون دسترسی به سرورهای خارج، همه در یک داشبورد زیبا و امن.</p>
+        <div class="hero-actions">
+          <a href="#preview" class="button button-primary">مشاهده داشبورد <span aria-hidden="true">↙</span></a>
+          <a href="https://github.com" class="button button-glass" data-repo-link target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.08c-3.09.67-3.75-1.31-3.75-1.31-.5-1.29-1.22-1.63-1.22-1.63-1-.68.08-.67.08-.67 1.11.08 1.69 1.14 1.69 1.14.99 1.68 2.59 1.2 3.22.92.1-.71.39-1.2.71-1.48-2.47-.29-5.06-1.23-5.06-5.49 0-1.21.43-2.2 1.14-2.98-.12-.29-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 5.55 0c2.11-1.43 3.04-1.13 3.04-1.13.61 1.53.23 2.65.11 2.94.71.78 1.14 1.77 1.14 2.98 0 4.27-2.6 5.2-5.08 5.48.4.35.76 1.02.76 2.05v3.03c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg> مشاهده کد</a>
+        </div>
+        <div class="hero-tags"><span><i class="tagdot green"></i> خودمیزبان و بدون داشبورد ابری</span><span><i class="tagdot blue"></i> FastAPI + Python</span><span><i class="tagdot red"></i> ورود امن + SSL</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orb-1" aria-hidden="true"></div><div class="orbit orb-2" aria-hidden="true"></div>
+        <div class="hero-shot"><div class="shot-title"><div class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>JAMSHID / LIVE OBSERVATORY</span><span class="green-label">● DEMO</span></div><img data-preview-image src="assets/dashboard-dark.webp" alt="پیش‌نمایش داشبورد جمشید با داده‌های نمایشی"/></div>
+        <div class="floating-stat stat-ping"><span class="stat-icon">↗</span><div><small>OUTBOUND PROBES</small><b>TCP · ICMP · DNS</b></div></div>
+        <div class="floating-stat stat-secure"><span class="stat-icon lock-icon">⌑</span><div><small>SECURE ACCESS</small><b>HTTPS / Login</b></div></div>
+      </div>
+    </section>
+
+    <section class="signal-wrap shell" aria-label="پروتکل‌های بررسی‌شده">
+      <div class="signal-label">پوشش رادار <span></span></div>
+      <div class="signals"><div><span class="signal-dot c-blue"></span><b>TCP / UDP</b><small>Listening sockets</small></div><div><span class="signal-dot c-red"></span><b>IPv4 / IPv6</b><small>Interfaces &amp; egress</small></div><div><span class="signal-dot c-yellow"></span><b>ICMP / HTTPS</b><small>Connectivity checks</small></div><div><span class="signal-dot c-green"></span><b>VPN services</b><small>Best-effort detection</small></div></div>
+    </section>
+
+    <section id="features" class="section shell">
+      <div class="section-head"><span class="overline">WHAT JAMSHID MONITORS</span><h2>از وضعیت سرور تا مسیرهای خروجی</h2><p>اطلاعات کاربردی برای تصمیم‌گیری دقیق‌تر درباره سلامت ارتباطات؛ بدون ادعای اندازه‌گیری چیزهایی که از یک سرور به‌تنهایی قابل تشخیص نیستند.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-blue"><div class="feature-icon">◉</div><h3>پایش لحظه‌ای سرور</h3><p>مصرف CPU، حافظه، فضای دیسک، رابط‌ها و نرخ ترافیک ورودی و خروجی با نمودارهای پویا.</p><span>REAL-TIME METRICS</span></article>
+        <article class="feature-card feature-red"><div class="feature-icon">⌘</div><h3>ردیابی پورت‌های TCP و UDP</h3><p>فهرست سوکت‌های در حال شنود، آدرس Bind و خانواده IPv4/IPv6، مستقیماً از ابزارهای لینوکس.</p><span>LOCAL SOCKETS</span></article>
+        <article class="feature-card feature-yellow"><div class="feature-icon">↗</div><h3>آزمون سرورهای خارجی</h3><p>پایش TCP و Ping برای مقصدهای قابل تنظیم؛ مناسب مقایسه دسترسی از داخل ایران به VPSهای خارج.</p><span>OUTBOUND CONNECTIVITY</span></article>
+        <article class="feature-card feature-green"><div class="feature-icon">⛨</div><h3>وضعیت سرویس‌های VPN</h3><p>شناسایی سرویس‌های شناخته‌شده و رابط‌های تونل؛ همراه با نمایش تفاوت وضعیت سرویس و عملکرد واقعی تونل.</p><span>SERVICE DISCOVERY</span></article>
+        <article class="feature-card feature-blue"><div class="feature-icon">⌁</div><h3>تشخیص چندپروتکلی</h3><p>تست DNS، HTTPS، IPv4/IPv6 و یک جریان مشخص UDP/STUN با نمایش نتیجه مستقل هر آزمون.</p><span>NETWORK DIAGNOSTICS</span></article>
+        <article class="feature-card feature-red"><div class="feature-icon">◇</div><h3>پنل امن و خصوصی</h3><p>ورود با رمز عبور، مسیر وب اختصاصی، TLS با Let's Encrypt و مدیریت اعتبارنامه از ترمینال.</p><span>AUTH &amp; ENCRYPTION</span></article>
+      </div>
+    </section>
+
+    <section id="preview" class="section shell preview-section">
+      <div class="section-head"><span class="overline">THE INTERFACE</span><h2>ساده، خوانا، شیشه‌ای.</h2><p>طراحی راست‌به‌چپ با فونت وزیرمتن، رنگ‌های آبی، قرمز، زرد و سبز و دو تم اختصاصی.</p></div>
+      <div class="preview-controls" role="group" aria-label="انتخاب تم پیش‌نمایش"><button type="button" data-preview-mode="dark" aria-pressed="true">● زغالی / Dark</button><button type="button" data-preview-mode="light" aria-pressed="false">☀ استخوانی / Light</button></div>
+      <div class="preview-surface"><div class="preview-window-head"><div class="window-circles" aria-hidden="true"><i></i><i></i><i></i></div><span>JAMSHID — NETWORK RADAR</span><span class="demo-label">SAMPLE DATA / داده آزمایشی</span></div><img id="preview-main" src="assets/dashboard-dark.webp" alt="پیش‌نمایش صفحه اصلی داشبورد جمشید در تم تیره" loading="lazy"/></div>
+      <p class="preview-note">این‌ها تصاویر رابط کاربری هستند؛ برای مشاهده وضعیت واقعی شبکه باید جمشید را روی سرور خودت نصب کنی.</p>
+    </section>
+
+    <section id="workflow" class="section shell">
+      <div class="section-head"><span class="overline">HOW IT WORKS</span><h2>رادار از دید سرور تو</h2><p>همه تست‌های اتصال از داخل Ubuntu شروع می‌شوند؛ بنابراین نتیجه، نمایی از ارتباط خروجی همان سرور است.</p></div>
+      <div class="pipeline"><div class="pipe-card"><span class="pipe-number">01</span><div class="pipe-visual"><span>◫</span></div><h3>Ubuntu Server</h3><p>جمع‌آوری وضعیت سیستم، شبکه و پورت‌های محلی</p></div><div class="pipe-arrow" aria-hidden="true">←</div><div class="pipe-card"><span class="pipe-number">02</span><div class="pipe-visual"><span>⌁</span></div><h3>Jamshid Probes</h3><p>اجرای آزمون‌های TCP، ICMP، DNS و HTTPS</p></div><div class="pipe-arrow" aria-hidden="true">←</div><div class="pipe-card"><span class="pipe-number">03</span><div class="pipe-visual"><span>◎</span></div><h3>Foreign destinations</h3><p>سرویس‌ها یا VPSهای خارجی که خودت تعیین می‌کنی</p></div></div>
+      <div class="scope-callout"><span aria-hidden="true">ⓘ</span><p><b>دقت مانیتورینگ:</b> «پورت در حال شنود» معادل «باز بودن از اینترنت» نیست؛ همچنین تست موفق TCP لزوماً به معنای سالم بودن کانفیگ VPN نیست. برای ارزیابی دسترسی ورودی از خارج، به یک Agent خارجی نیاز داریم.</p></div>
+    </section>
+
+    <section id="install" class="section shell installation">
+      <div class="install-box"><div class="install-intro"><span class="overline">DEPLOY YOUR OWN RADAR</span><h2>نصب روی Ubuntu،<br/><em>با کنترل کامل.</em></h2><p>مخزن را روی سرور دریافت کن و نصب‌کننده تعاملی را اجرا کن. برای استفاده بیرونی، دامنه و HTTPS لازم است.</p><div class="install-chips"><span>Ubuntu 22.04 / 24.04 / 26.04</span><span>Nginx</span><span>Let's Encrypt</span></div><a href="../README.md" class="link-more">راهنمای کامل نصب <span aria-hidden="true">←</span></a></div><div class="terminal" dir="ltr"><div class="terminal-bar"><span class="dots"><i></i><i></i><i></i></span><span>ubuntu@server:~</span><button class="copy-btn" type="button" data-copy="#terminal-code" aria-label="کپی دستورات نصب">Copy</button></div><pre id="terminal-code"><code><span class="comment"># 1. Clone the repository</span>
+sudo apt update && sudo apt install -y git
+git clone https://github.com/ArioBarzanMoradi/Jamshid-Radar.git
+cd Jamshid-Radar
+
+<span class="comment"># 2. Run the installer</span>
+sudo bash scripts/install.sh
+
+<span class="comment"># 3. Enable HTTPS after DNS is ready</span>
+sudo bash scripts/enable-ssl.sh jamshid.example.com</code></pre><div class="terminal-foot">Replace USERNAME and domain with your own values.</div></div></div>
+    </section>
+
+    <section class="shell final-cta"><div><span class="overline">YOUR SERVER. YOUR RADAR.</span><h2>جمشید؛ دید بهتر به شبکه.</h2><p>کد پروژه برای انتشار در مخزن GitHub آماده است؛ درباره مجوز توزیع، صاحب پروژه تصمیم می‌گیرد.</p></div><a href="https://github.com" class="button button-primary" data-repo-link target="_blank" rel="noopener noreferrer">رفتن به مخزن GitHub <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer shell"><div class="footer-brand"><img src="assets/logo.svg" width="37" height="37" alt=""/><div><strong>JAMSHID</strong><small>NETWORK RADAR · v1.1</small></div></div><p>ساخته‌شده برای پایش شفاف‌تر شبکه. سایت معرفی است و هیچ اطلاعات زنده‌ای از سرور دریافت نمی‌کند.</p><a href="#home">بازگشت به بالا ↑</a></footer>
+</body>
+</html>

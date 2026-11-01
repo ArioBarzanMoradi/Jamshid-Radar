@@ -1,0 +1,12 @@
+{
+  "username": "admin",
+  "password_hash": "REPLACE_WITH_RADARCTL",
+  "session_secret": "REPLACE_WITH_RADARCTL",
+  "base_path": "/jamshid-demo123/",
+  "targets": [
+    {"id": "cloudflare", "name": "Cloudflare", "country": "GLOBAL", "host": "1.1.1.1", "port": 443, "enabled": true},
+    {"id": "google", "name": "Google", "country": "GLOBAL", "host": "www.google.com", "port": 443, "enabled": true},
+    {"id": "github", "name": "GitHub", "country": "GLOBAL", "host": "github.com", "port": 443, "enabled": true},
+    {"id": "telegram", "name": "Telegram API", "country": "GLOBAL", "host": "api.telegram.org", "port": 443, "enabled": true}
+  ]
+}
